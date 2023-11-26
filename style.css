@@ -1,0 +1,138 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background: linear-gradient(90deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+}
+h1 {
+    color: white;
+    font-size: 56px;
+    text-shadow: 5px 6px 0px #f00;
+}
+#timer {
+    width: 200px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: monospace;
+}
+#question-container {
+    max-width: 550px;
+    margin: 0 auto;
+}
+h4 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+label {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px;
+    display: inline-block;
+}
+.optionSet:hover {
+    background: #FFF;
+}
+.optionSet:hover label {
+    color: #000;
+}
+.optionSet {
+    display: inline-block;
+    width: 100%;
+    background: #a20000;
+    border: 1px solid #FFF;
+    margin-bottom: 10px;
+    max-width: 440px;
+}
+.optionSet, .optionSet * {
+    cursor: pointer;
+}
+
+#nextQuestion {
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px 30px;
+    width: 100%;
+    border: 1px solid #000;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    max-width: 440px;
+}
+#nextQuestion:hover {
+    color: white;
+    background: black;
+}
+#nextQuestion[disabled] {
+    background: #CCC;
+    color: grey;
+    cursor: not-allowed;
+}
+#number {
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background: #212121bd;
+}
+#userInfo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #dedede;
+    padding: 19px;
+    width: 300px;
+    height: 165px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border: 1px solid #000;
+}
+#userInfo h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0px 0px 20px;
+}
+#userInfo input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 5px 0px;
+}
+#userInfo button {
+    width: 100%;
+    padding: 7px 0px;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #a40808;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: unset;
+}
+#userInfo button:hover {
+    color: #a40808;
+    background: white;
+}
